@@ -44,7 +44,7 @@ void start_shell(char **argv) {
 }
 
 char *read_line(char *line) {
-    usleep(500000);
+    sleep(500000);
     fflush(stdout);
     print_prompt();
     char* ctrd = fgets(line, COMMAND_LINE_SIZE, stdin);
